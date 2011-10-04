@@ -67,6 +67,16 @@ INSTALL for Lua 5.1
   automatically for all platforms listed above that have this feature
   (and also Windows). See src/luaconf.h and also src/Makefile.
 
+* Building Lua for QNX from Windows
+  ---------------------------------
+  Run cmd.exe and execute the following commands:
+    > cd [bbndk]				where [bbndk] is where the QNX NDK was installed (i.e. C:\bbndk)
+    > NativeSDK-env.bat
+    > cd [lua]				    where [lua] is the directory where Lua was extracted to
+    > make qnx
+  Following this, the relevant binaries should reside in the arm/ subdirectory.
+  (To clean, run 'make qnxclean'.)
+
 * Building Lua on Windows and other systems
   -----------------------------------------
   If you're not using the usual Unix tools, then the instructions for
