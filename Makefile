@@ -55,12 +55,6 @@ all:	$(PLAT)
 $(PLATS) clean:
 	cd src && $(MAKE) $@
 
-qnxclean:
-	make -f QNX.mk clean
-
-qnx:
-	make -f QNX.mk
-
 test:	dummy
 	src/lua test/hello.lua
 

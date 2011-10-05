@@ -3,10 +3,10 @@ QCONFIG=qconfig.mk
 endif
 include $(QCONFIG)
 
-NAME=Lua
+NAME=lua
 
 #===== EXTRA_SRCVPATH - a space-separated list of directories to search for source files.
-EXTRA_SRCVPATH+=$(PROJECT_ROOT)/src
+EXTRA_SRCVPATH+=$(PRODUCT_ROOT)/src
 
 include $(MKFILES_ROOT)/qtargets.mk
 
