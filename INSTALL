@@ -71,7 +71,7 @@ INSTALL for Lua 5.1
   ---------------------------------
   Run cmd.exe and execute the following commands:
     > cd [bbndk]				where [bbndk] is where the QNX NDK was installed (i.e. C:\bbndk)
-    > NativeSDK-env.bat
+    > bbndk-env.bat
     > cd [lua]/qnx			    where [lua] is the directory where Lua was extracted to
     > make
   Following this, the relevant binaries should reside in the following subdirectories:
