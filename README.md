@@ -1,4 +1,4 @@
-# Lua v5.2
+# Lua v5.2.1
 
 The _**Lua**_ repository holds the sources for Lua, a powerful, fast, lightweight, embeddable scripting language. 
 It has additionally been ported to run with the BlackBerry Native SDK for BlackBerry Tablet OS and BlackBerry 10 OS.
@@ -6,6 +6,22 @@ It has additionally been ported to run with the BlackBerry Native SDK for BlackB
 **Repository Committers** 
 
 * [Sean Paul Taylor](https://github.com/seanpaultaylor)
+
+## Building Lua (QNX)
+
+   1. Run cmd.exe and execute the following commands:
+  
+        cd [bbndk]              where [bbndk] is where the QNX NDK was installed (i.e. C:\bbndk-xx.xx)
+        bbndk-env.bat           or source bbnd-env.sh for macosx/linux
+        cd [lua]/qnx            where [lua] is the directory where Lua was extracted to
+        make
+ 
+   2. Following this, the relevant binaries should reside in the following subdirectories:
+
+        [lua]/qnx/arm/a.le.v7   (ARM release)
+        [lua]/qnx/arm/a.le.v7.g (ARM debug)
+        [lua]/qnx/x86/a         (x86 simulator release)
+        [lua]/qnx/x86/a.g       (x86 simulator debug)
 
 ## License
 
